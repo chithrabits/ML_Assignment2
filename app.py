@@ -35,12 +35,12 @@ st.sidebar.header("⚙️ Configuration")
 
 # Model selection dropdown
 model_options = {
-    'Logistic Regression': 'model/logistic_regression.pkl',
-    'Decision Tree': 'model/decision_tree.pkl',
-    'K-Nearest Neighbors': 'model/knn.pkl',
-    'Naive Bayes': 'model/naive_bayes.pkl',
-    'Random Forest': 'model/random_forest.pkl',
-    'XGBoost': 'model/xgboost.pkl'
+    'Logistic Regression': 'logistic_regression.pkl',
+    'Decision Tree': 'decision_tree.pkl',
+    'K-Nearest Neighbors': 'knn.pkl',
+    'Naive Bayes': 'naive_bayes.pkl',
+    'Random Forest': 'random_forest.pkl',
+    'XGBoost': 'xgboost.pkl'
 }
 
 selected_model_name = st.sidebar.selectbox(
