@@ -157,7 +157,7 @@ if uploaded_file is not None:
         
         # Display dataset preview
         st.subheader("📋 Dataset Preview")
-        st.dataframe(df.head(10), use_container_width=True)
+        st.dataframe(df.head(10), width='stretch')
         
         # Dataset statistics
         with st.expander("📊 Dataset Statistics"):
@@ -254,7 +254,7 @@ if uploaded_file is not None:
                         st.subheader("📄 Classification Report")
                         report = classification_report(y, y_pred, output_dict=True)
                         report_df = pd.DataFrame(report).transpose()
-                        st.dataframe(report_df.round(4), use_container_width=True)
+                        st.dataframe(report_df.round(4), width='stretch')
                     
                     # Download predictions
                     st.markdown("---")
@@ -299,7 +299,7 @@ else:
     }
     
     comparison_df = pd.DataFrame(comparison_data)
-    st.dataframe(comparison_df, use_container_width=True, hide_index=True)
+    st.dataframe(comparison_df,width='stretch', hide_index=True)
     
     st.caption("*Note: These are example metrics. Actual values will be displayed after prediction.*")
 
